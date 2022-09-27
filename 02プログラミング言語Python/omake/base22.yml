@@ -1,0 +1,13 @@
+# 環境構築 mamba env create --name base22 --file 92base22.yml
+# 更新    mamba env update --name base22 --file 92base22.yml
+
+name: base22
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - jupyter
+  - pip
+  - pip:
+    - japanize-matplotlib
