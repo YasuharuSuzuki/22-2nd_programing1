@@ -1,5 +1,5 @@
-# 環境構築 mamba env create --name base22 --file 92base22.yml
-# 更新    mamba env update --name base22 --file 92base22.yml
+# 環境構築 mamba env create --name base22 --file base22.yml
+# 更新    mamba env update --name base22 --file base22.yml
 
 name: base22
 channels:
@@ -7,6 +7,9 @@ channels:
 
 dependencies:
   - python=3.9
+  - h5py # h5ファイルを開く
+  - pandas # データ分析用ライブラリ
+  - pillow # 画像ライブラリ
   - jupyter
   - pip
   - pip:
